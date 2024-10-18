@@ -1,0 +1,24 @@
+# Toy클래스 연습
+class Toy(object):
+    def __init__(self):
+        self._elems = []
+    def add(self, new_elems):
+        self._elems += new_elems
+    def size(self):
+        return len(self._elems)   
+t1 = Toy()
+t2 =Toy()
+t1.add([2,3])
+t2.add([1,41])
+print(t1.size()+t2.size())
+t3 = t1._elems+t2._elems
+print(t3)     
+t3.sort()
+print(t3)
+
+# IntSet클래스
+class IntSet(object):
+    def __init__(self):
+        self._vals = []
+    def insert(self, e):
+        s
